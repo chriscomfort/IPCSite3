@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     subnav.classList.toggle("active");
   });
 
-  // Handle subnav link clicks
+
   subnavLinks.forEach(function(link) {
     link.addEventListener("click", function(event) {
       event.preventDefault();
