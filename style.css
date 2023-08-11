@@ -22,10 +22,11 @@
 .menu ul{
   display: inline-block;
   margin: 10px;
-  position: fixed;
+  position: relative;
   top: 40px;
   right: 20px;
-  font-family: 'BaseFont'
+  margin-left: 75%;
+  font-family: 'BaseFont';
 }
 .menu li{
   list-style: none;
@@ -61,7 +62,7 @@ footer{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 1%;
 }
 .banner hover{
   color:#c61f3b;
@@ -131,8 +132,8 @@ footer{
   line-height:130%;
   margin-top: 0%;
 }
-.about-info a{
-  padding-top: 20%;
+.about-info{
+  padding-top: 7%;
   font-family: 'BaseFont';
   text-decoration: none;
   display: flex;
@@ -142,6 +143,7 @@ footer{
   margin-top: 0%;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 20%;
 }
 .about-info h1{
   margin-bottom: 7%;
@@ -180,8 +182,8 @@ footer{
   margin-top: 15%;
   font-family: 'BaseFont'
 }
-.btk-about a{
-  padding-top: 20%;
+.btk-about{
+  padding-top: 3%;
   font-family: 'BaseFont';
   text-decoration: none;
   display: flex;
@@ -210,36 +212,37 @@ footer{
   text-align: center;
   margin-top: 7%;
 }
-.call-link a{
+a, a:active{
   text-decoration: none;
+  color: #c61f3b;
+}
+a:hover{
+  text-decoration: underline;
 }
 .castingcall{
   overflow-x: hidden;
-  align-items:center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .castingcall a{
   display: block;
   max-width: 100%;
-  position: relative;
-  width: 50%;
   height: auto;
 }
 .castingcall img{
   display: block;
-  object-fit: contain;
   width: auto;
-  height: 30%;
-  position: relative;
-  margin-left: 87%;
+  height: 350px;
 }
 .subnav {
   display: none;
   position: absolute;
-  top: 0;
-  left: -250px; /* Adjust this value as needed */
-  background-color: #f9f9f9;
-  min-width: 160px;
-  z-index: 5;
+  top: 15%;
+  left: -180px;
+  text-align: right;
+  min-width: 100px;
 }
 
 .subnav.active {
