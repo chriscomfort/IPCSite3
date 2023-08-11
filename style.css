@@ -19,7 +19,7 @@
   height: 100%;
   background: white;
 }
-.menu ul{
+.menu> ul{
   display: inline-block;
   margin: 10px;
   position: relative;
@@ -237,14 +237,16 @@ a:hover{
   height: 350px;
 }
 .subnav {
-  display: none;
+  //display: none;
   position: absolute;
-  top: 15%;
-  left: -180px;
+  top: 0;
+  left: -65%;
   text-align: right;
-  min-width: 100px;
 }
 
 .subnav.active {
   display: block;
+}
+.parent{
+  position: relative;
 }
