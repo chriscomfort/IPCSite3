@@ -244,12 +244,16 @@ footer{
   font-family: 'SuperRetro';
   text-decoration: underline;
 }
+.call-link h3:hover{
+  color: #000000;
+}
 a, a:active{
   text-decoration: none;
   color: #c61f3b;
 }
 a:hover{
   text-decoration: none;
+  color: #000000
 }
 .castingcall{
   overflow-x: hidden;
@@ -263,6 +267,16 @@ a:hover{
   max-width: 100%;
   height: auto;
 }
+.castingcall h2{
+  font-family: "SuperRetro";
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 1.5%;
+  text-decoration: underline;
+}
+.castingcall h2:hover{
+  color: #000000
+}
 .castingcall img{
   width: auto;
   height: 35%;
@@ -270,6 +284,7 @@ a:hover{
   display: flex;
   position: sticky;
   margin-top: -5%;
+  margin-right: 37px;
 }
 .subnav {
   display: none;
