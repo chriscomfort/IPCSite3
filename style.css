@@ -31,14 +31,14 @@ body{
 }
 .menu> ul{
   display: inline-block;
-  position: relative;
+  position: fixed;
   margin: 10px;
   font-family: 'BaseFont';
 }
 .menu ul{
-  top: 2%;
-  right: 2%;
-  position: fixed;
+  top: 2px;
+  right: 2px;
+  position:absolute;
   display: inline-block;
   margin: 10px;
 }
@@ -196,17 +196,19 @@ footer{
   position: inline;
 }
 .sympathizer-trailer p{
-  display: fixed;
+  font-family: 'BaseFont';
   text-align: left;
-  line-height:130%;
-  text-indent: 6%;
+  display: inline-block;
+  flex-direction: column;
+  line-height:150%;
   margin-top: 2%;
-  margin-bottom: 0;
   margin-left: 30%;
   margin-right: 30%;
+  margin-bottom: 0;
+  text-indent: 6%;
 }
 .sympathizer-trailer h6{
-  margin-top: 4%;
+  margin-top: 3%;
 }
 .fashion{
   text-align: center;
@@ -219,6 +221,11 @@ footer{
   display: flex;
   flex-direction: column;
   text-align: left;
+  line-height:150%;
+  margin-top: 0%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 0;
 }
 .btk-about h1{
   margin-bottom: 2.5%;
@@ -226,15 +233,33 @@ footer{
 }
 .btk-about p{
   line-height: 120%;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 2%;
+  margin-bottom: -2%;
+  text-indent: 6%;
+  padding-top: 5%;
 }
-.btk-about h2{
+.btk-about h3{
+  font-family: 'SuperRetro';
+  line-height: 120%;
+  font-size: 17px;
+  text-align: center;
+  color: #c61f3b;
+}
+.btk-about h4{
   font-family: 'BaseFont';
   line-height: 120%;
   font-size: 17px;
   text-align: center;
+  color: #000000;
+  margin-bottom: 2.5%;
+  margin-top: 2%;
+}
+.btk-about h5{
+  font-family: 'BaseFont';
+  line-height: 120%;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 1%;
+  color: #000000;
 }
 .call-link h3{
   text-align: center;
@@ -246,6 +271,7 @@ footer{
 }
 .call-link h3:hover{
   color: #000000;
+}
 }
 a, a:active{
   text-decoration: none;
@@ -267,6 +293,10 @@ a:hover{
   max-width: 100%;
   height: auto;
 }
+.castingcall a,active{
+  color: #000000;
+}
+
 .castingcall h2{
   font-family: "SuperRetro";
   text-align: center;
@@ -274,8 +304,8 @@ a:hover{
   margin-bottom: 1.5%;
   text-decoration: underline;
 }
-.castingcall h2:hover{
-  color: #000000
+.castingcall a:hover{
+  color: #c61f3b;
 }
 .castingcall img{
   width: auto;
@@ -290,8 +320,8 @@ a:hover{
   display: none;
   position: relative;
   text-align: right;
-  top: 0;
-  left: 0;
+  margin-top: -4.5%;
+  left: -42%;
 }
 .subnav.active {
   display: flex;
