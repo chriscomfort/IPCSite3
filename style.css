@@ -1,48 +1,56 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
-  padding-top:10%;
+
+body {
+  padding-top: 10%;
 }
+
 @font-face {
   font-family: 'BaseFont';
-  src:url('ZagolovochnayaW01-Book.woff'),url('ZagolovochnayaW01-Book.woff2');
+  src: url('ZagolovochnayaW01-Book.woff'), url('ZagolovochnayaW01-Book.woff2');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'ItalicFont';
-  src:url('Cambria-Italic.woff'),url('Cambria-Italic.woff2');
+  src: url('Cambria-Italic.woff'), url('Cambria-Italic.woff2');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'SuperRetro';
-  src:url('SuperRetroM54.woff'),url('SuperRetroM54.woff');
+  src: url('SuperRetroM54.woff'), url('SuperRetroM54.woff');
   font-weight: normal;
   font-style: normal;
 }
-.container{
+
+.container {
   width: 100%;
   height: 100%;
   background: white;
   padding-top: 50%;
 }
-.menu> ul{
+
+.menu>ul {
   display: inline-block;
   position: fixed;
   margin: 10px;
   font-family: 'BaseFont';
 }
-.menu ul{
+
+.menu ul {
   top: 2px;
   right: 2px;
-  position:absolute;
+  position: absolute;
   display: inline-block;
   margin: 10px;
 }
-.menu li{
+
+.menu li {
   list-style: none;
   color: #000000;
   cursor: pointer;
@@ -53,21 +61,26 @@ body{
   display: flex;
   justify-content: flex-end;
 }
-.menu a{
+
+.menu a {
   text-decoration: none;
   color: #000000;
 }
-.menu a:hover{
-  color:#c61f3b;
+
+.menu a:hover {
+  color: #c61f3b;
 }
-.banner a{
+
+.banner a {
   text-decoration: none;
   color: #000000;
 }
-.banner a:hover{
-  color:#000000;
+
+.banner a:hover {
+  color: #000000;
 }
-footer{
+
+footer {
   margin-top: 65%;
   position: fixed;
   bottom: 0px;
@@ -78,7 +91,8 @@ footer{
   width: 99.5%;
   text-align: right;
 }
-.banner{
+
+.banner {
   font-family: 'Basefont';
   display: flex;
   flex-direction: column;
@@ -86,10 +100,12 @@ footer{
   text-align: center;
   padding-top: 1%;
 }
-.banner hover{
-  color:#c61f3b;
+
+.banner hover {
+  color: #c61f3b;
 }
-.app-text h2{
+
+.app-text h2 {
   font-family: 'BaseFont';
   font-size: 200%;
   width: 100%;
@@ -99,7 +115,8 @@ footer{
   line-height: 100%;
   text-align: center;
 }
-.app-text h3{
+
+.app-text h3 {
   font-family: 'ItalicFont';
   font-size: 170%;
   width: 100%;
@@ -110,13 +127,15 @@ footer{
   color: #c61f3b;
   text-align: center;
 }
-.banner img{
+
+.banner img {
   height: 200px;
   margin-left: -5%;
   margin-top: 10%;
   width: auto;
   position: sticky;
 }
+
 .scroll-text {
   font-family: 'BaseFont';
   position: fixed;
@@ -130,21 +149,25 @@ footer{
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
-  margin-left:1%;
+  margin-left: 1%;
   margin-bottom: -1%;
 }
+
 @keyframes scrollText {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-140%);
   }
 }
-.contact-info ul{
-  padding-top: 18%;
+
+.contact-info ul {
+  margin-top: 5%;
 }
-.contact-info li{
+
+.contact-info li {
   font-family: 'BaseFont';
   position: sticky;
   text-decoration: none;
@@ -152,99 +175,113 @@ footer{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  line-height:130%;
+  line-height: 130%;
   margin-top: 0%;
 }
-.about-info{
+
+.about-info {
   padding-top: 0%;
   font-family: 'BaseFont';
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: left;
-  line-height:150%;
+  line-height: 150%;
   margin-top: 0%;
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 20%;
 }
-.about-info h1{
+
+.about-info h1 {
   margin-bottom: 5%;
   text-align: center;
 }
-.about-info p{
+
+.about-info p {
   line-height: 120%;
   margin-bottom: -2%;
   text-indent: 6%;
 }
-.sympathizer-trailer{
+
+.sympathizer-trailer {
   text-align: center;
   font-family: 'BaseFont';
   margin-top: 0;
 }
-.sympathizer-trailer h1{
+
+.sympathizer-trailer h1 {
   line-height: 100%;
   font-family: 'BaseFont';
   margin-bottom: 5%;
   position: inline;
 }
-.sympathizer-trailer h2{
+
+.sympathizer-trailer h2 {
   line-height: 105%;
   font-family: 'BaseFont';
   margin-bottom: 1.2%;
   text-align: center;
   position: inline;
 }
-.sympathizer-trailer p{
+
+.sympathizer-trailer p {
   font-family: 'BaseFont';
   text-align: left;
   display: inline-block;
   flex-direction: column;
-  line-height:150%;
+  line-height: 150%;
   margin-top: 2%;
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 0;
   text-indent: 6%;
 }
-.sympathizer-trailer h6{
+
+.sympathizer-trailer h6 {
   margin-top: 3%;
 }
-.fashion{
+
+.fashion {
   text-align: center;
-  margin-top: 15%;
+  margin-top: 4%;
   font-family: 'BaseFont'
 }
-.btk-about{
+
+.btk-about {
   font-family: 'BaseFont';
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: left;
-  line-height:150%;
+  line-height: 150%;
   margin-top: 0%;
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 0;
 }
-.btk-about h1{
+
+.btk-about h1 {
   margin-bottom: 2.5%;
   text-align: center;
 }
-.btk-about p{
+
+.btk-about p {
   line-height: 120%;
   margin-bottom: -2%;
   text-indent: 6%;
   padding-top: 5%;
 }
-.btk-about h3{
+
+.btk-about h3 {
   font-family: 'SuperRetro';
   line-height: 120%;
   font-size: 17px;
   text-align: center;
   color: #c61f3b;
 }
-.btk-about h4{
+
+.btk-about h4 {
   font-family: 'BaseFont';
   line-height: 120%;
   font-size: 17px;
@@ -253,7 +290,8 @@ footer{
   margin-bottom: 2.5%;
   margin-top: 2%;
 }
-.btk-about h5{
+
+.btk-about h5 {
   font-family: 'BaseFont';
   line-height: 120%;
   font-size: 15px;
@@ -261,53 +299,64 @@ footer{
   margin-bottom: 1%;
   color: #000000;
 }
-.call-link h3{
+
+.call-link h3 {
   text-align: center;
   margin-top: 1.3%;
 }
-.call-link a{
+
+.call-link a {
   font-family: 'SuperRetro';
   text-decoration: underline;
 }
-.call-link h3:hover{
+
+.call-link h3:hover {
   color: #000000;
 }
-}
-a, a:active{
+
+a,
+a:active {
   text-decoration: none;
   color: #c61f3b;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
   color: #000000
 }
-.castingcall{
+
+.castingcall {
   overflow-x: hidden;
   align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.castingcall a{
+
+.castingcall a {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.castingcall a,active{
+
+.castingcall a,
+active {
   color: #000000;
 }
 
-.castingcall h2{
+.castingcall h2 {
   font-family: "SuperRetro";
   text-align: center;
   font-size: 35px;
   margin-bottom: 1.5%;
   text-decoration: underline;
 }
-.castingcall a:hover{
+
+.castingcall a:hover {
   color: #c61f3b;
 }
-.castingcall img{
+
+.castingcall img {
   width: auto;
   height: 35%;
   text-align: center;
@@ -316,6 +365,7 @@ a:hover{
   margin-top: -5%;
   margin-right: 37px;
 }
+
 .subnav {
   display: none;
   position: relative;
@@ -323,9 +373,11 @@ a:hover{
   margin-top: -4.5%;
   left: -42%;
 }
+
 .subnav.active {
   display: flex;
 }
-.parent{
+
+.parent {
   position: relative;
 }
