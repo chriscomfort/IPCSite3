@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -9,21 +9,21 @@ body {
 
 @font-face {
   font-family: 'BaseFont';
-  src: url('fonts/ZagolovochnayaW01-Book.woff'), url('fonts/ZagolovochnayaW01-Book.woff2');
+  src: url('ZagolovochnayaW01-Book.woff'), url('ZagolovochnayaW01-Book.woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ItalicFont';
-  src: url('fonts/Cambria-Italic.woff'), url('fonts/Cambria-Italic.woff2');
+  src: url('Cambria-Italic.woff'), url('Cambria-Italic.woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SuperRetro';
-  src: url('fonts/SuperRetroM54.woff'), url('fonts/SuperRetroM54.woff');
+  src: url('SuperRetroM54.woff'), url('SuperRetroM54.woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -244,7 +244,7 @@ footer {
 
 .fashion {
   text-align: center;
-  margin-top: 4%;
+  margin-top: 5%;
   font-family: 'BaseFont'
 }
 
