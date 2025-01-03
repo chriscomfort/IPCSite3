@@ -5,28 +5,136 @@
   <title>IVY PHAM CASTING</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .homeimage {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    @font-face {
+      font-family: "Aston Script";
+      src: url("Aston Script.ttf") format("truetype");
     }
 
-    .homeimage img {
-      width: 50%;
-      height: auto;
+    body {
+      font-family: "Charter", serif;
+      font-weight: bold;
+      color: #5a321a;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0.2em 0;
+      border-bottom: 2px solid #5a321a;
+      display: inline-block;
+      line-height: 0.8;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin: 0.3em 0;
+    }
+
+    .tagline {
+      font-family: "Aston Script", serif;
+      font-style: italic;
+      font-size: 2em;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      color: #5a321a;
+      z-index: 10;
+    }
+
+    .menu {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-family: "Charter", serif;
+      color: #5a321a;
+    }
+
+    .menu-button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: #5a321a;
+      font-size: 1.5em;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 5px;
+    }
+
+    .menu-button div {
+      width: 30px;
+      height: 4px;
+      background-color: #5a321a;
+      margin: 3px 0;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background-color: white;
+      z-index: 1;
+    }
+
+    .dropdown a {
+      color: #5a321a;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      text-align: right;
+    }
+
+    .dropdown a:hover {
+      color: maroon;
+    }
+
+    .menu:hover .dropdown, .menu-button:focus + .dropdown {
+      display: block;
+    }
+
+    footer p {
+      color: #5a321a;
+      margin-top: 2em;
     }
   </style>
 </head>
 
 <body>
-  <div class="homeimage">
-    <img src="IPC_Temp_Update.png" alt="Ivy Pham Casting">
+  <div class="menu">
+    <button class="menu-button" aria-expanded="false">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <div class="dropdown">
+      <a href="films.html">Films</a>
+      <a href="#">About</a>
+    </div>
   </div>
+
+  <header>
+    <h1>IVY PHAM CASTING</h1>
+    <h2>Casting Services</h2>
+    <p class="tagline">Film / Fashion / Advertising</p>
+  </header>
 
   <footer>
     <p>&copy; 2025 Ivy Pham Casting</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 
 </html>
