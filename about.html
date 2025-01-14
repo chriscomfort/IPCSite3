@@ -1,68 +1,174 @@
-<Doctype html>
-  <html>
+<!DOCTYPE html>
+<html>
 
-  <head>
-    <title> About </title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @font-face {
+      font-family: "Aston Script";
+      src: url("Aston Script.ttf") format("truetype");
+    }
 
-  <body>
-    <div class="menu">
-      <ul>
-        <li class="active"><a href="index.html">HOME</a></li>
-        <li class="active"><a href="about.html">ABOUT</a></li>
-        <li class="active"><a href="born-to-kill.html">BORN TO KILL FILM</a></li>
-        <li class="parent" id="past-work">
-          <a href="#">PAST WORK</a>
-          <div class="subnav">
-            <ul>
-              <li class="active"><a href="film-and-tv.html">FILM & TV</a></li>
-              <li class="active"><a href="fashion.html">FASHION</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="active"><a href="contact.html">CONTACT</a></li>
-      </ul>
+    body {
+      font-family: "Charter", serif;
+      font-weight: bold;
+      color: #5a321a;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0.2em 0;
+      border-bottom: 2px solid #5a321a;
+      display: inline-block;
+      line-height: 0.8;
+      padding-bottom: 0;
+    }
+
+    .about-content {
+      max-width: 800px;
+      text-align: left;
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #5a321a;
+      margin: 20px auto;
+    }
+
+    .about-content p {
+      text-indent: 2em;
+      margin-bottom: 1em;
+    }
+
+    .contact-info {
+      margin-top: 2em;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.5em;
+    }
+
+    .contact-info a {
+      color: #5a321a;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: maroon;
+    }
+
+    .menu {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-family: "Charter", serif;
+      color: #5a321a;
+    }
+
+    .menu-button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: #5a321a;
+      font-size: 1.5em;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 5px;
+    }
+
+    .menu-button div {
+      width: 30px;
+      height: 4px;
+      background-color: #5a321a;
+      margin: 3px 0;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background-color: white;
+      z-index: 1;
+    }
+
+    .dropdown a {
+      color: #5a321a;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      text-align: right;
+    }
+
+    .dropdown a:hover {
+      color: maroon;
+    }
+
+    .menu:hover .dropdown, .menu-button:focus + .dropdown {
+      display: block;
+    }
+
+    footer p {
+      color: #5a321a;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <button class="menu-button" aria-expanded="false">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <div class="dropdown">
+      <a href="index.html">Home</a>
+      <a href="film.html">Films</a>
+      <a href="about.html">About</a>
     </div>
-    <div class="about-info">
-      <h1>ABOUT</h1>
-      <h2></h2>
-      <h3></h3>
-      &nbsp
-      <p>
-        Ivy Pham is a NY based Casting Director with 10 years of experience providing
-        casting services for film, TV fashion shows, editorial, advertising, and street
-        casting projects worldwide.
-      </p>
-      &nbsp
-      <p>
-        She is currently casting <i>Born To Kill</i>, a Vietnamese-American Indie Feature Film.
-      </p>
-      &nbsp
-      <p>
-        She has worked on projects in the past as a casting assistant at the NYC casting
-        office of JV8INC under the acclaimed Jennifer Venditti (<i>Uncut Gems</i>, <i>Euphoria</i>, <i>The
-          Sympathizer</i>).
-        Her recent credits include HBO/A24's upcoming Vietnamese-American series <i>The Sympathizer</i>
-        (directed by Park Chan-Wook, starring Robert Downey Jr., Nguy&#7877n Cao K&#7923 Duy&#234n, Kieu Chinh)
-        and Showtime/A24's upcoming <i>The Curse</i> (starring Emma Stone, Nathan Fielder, Benny Safdie).
-      </p>
-      &nbsp
-      <p>
-        Before making her way to Film & TV, she worked behind the scenes in the high fashion world
-        for 8 years, working with world renowned fashion casting director Michelle Lee, casting runway
-        shows, advertising campaigns, and editorials for clients such as Dior, Celine, Hugo Boss, Khaite,
-        Tommy Hilfiger, Vera Wang, Shiseido, Zara, W Magazine, and Interview Magazine.
-      </p>
-    </div>
+  </div>
 
-    <div class="scroll-text">
-      <h1 id="morphing-text">IVY PHAM CASTING</h1>
-    </div>
-    <footer class="footer">
-      <p>&copy; 2023 Ivy Pham Casting</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  <header>
+    <h1>ABOUT</h1>
+  </header>
 
-  </html>
+  <section class="about-content">
+    <p>
+      Ivy Pham is a NY based Casting Director with over 10 years of experience providing casting services for film, TV fashion shows, editorial, advertising, and street casting projects worldwide.
+    </p>
+    <p>
+      She currently works as a freelance casting associate at the NYC casting office of <a href="https://www.jv8inc.com" target="_blank">JV8INC</a> under the acclaimed Jennifer Venditti. Her recent work includes A24's upcoming features <strong>MARTY SUPREME</strong> (Timothee Chalamet, Gwyneth Paltrow, Tyler The Creator), <strong>THE SMASHING MACHINE</strong> (Dwayne Johnson, Emily Blunt), Yorgo Lanthimos' <strong>BUGONIA</strong> (Emma Stone, Jesse Plemons), and HBO/A24's <strong>THE SYMPATHIZER</strong> (directed by Park Chan-Wook, starring Robert Downey Jr., Sandra Oh).
+    </p>
+    <p>
+      Before making her way to Film & TV, she casted in the high fashion world for 8 years, working with world-renowned CD Michelle Lee casting runway shows, fashion campaigns, and editorials for clients such as Dior, Celine, Hugo Boss, Khaite, Tommy Hilfiger, Vera Wang, Zara, W Magazine, and Interview Magazine.
+    </p>
+    <div class="contact-info">
+      <p>Contact Info:</p>
+      <p>ivy@ivyphamcasting.com</p>
+      <p>+1-917-769-8225</p>
+      <p><a href="https://www.imdb.com/name/nm13287306/" target="_blank">IMDB</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ivy Pham Casting</p>
+  </footer>
+</body>
+
+</html>

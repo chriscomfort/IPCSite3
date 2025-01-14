@@ -46,9 +46,27 @@
       font-size: 2em;
       position: fixed;
       bottom: 20px;
-      left: 20px;
+      left: 50%;
+      transform: translateX(-50%);
       color: #5a321a;
       z-index: 10;
+    }
+
+    .tagline a {
+      text-decoration: none;
+      color: #5a321a;
+      margin: 0 10px;
+      font-family: "Aston Script", serif;
+      font-size: 1em;
+    }
+
+    .tagline a:hover {
+      color: maroon;
+    }
+
+    .tagline span {
+      color: #5a321a;
+      margin: 0 5px;
     }
 
     .menu {
@@ -121,6 +139,7 @@
       <div></div>
     </button>
     <div class="dropdown">
+      <a href="index.html">Home</a>
       <a href="films.html">Films</a>
       <a href="about.html">About</a>
     </div>
@@ -129,7 +148,11 @@
   <header>
     <h1>IVY PHAM CASTING</h1>
     <h2>Casting Services</h2>
-    <p class="tagline">Film / Fashion / Advertising</p>
+    <p class="tagline">
+      <a href="film.html">Film</a><span>/</span>
+      <a href="fashion.html">Fashion</a><span>/</span>
+      <a href="advertising.html">Advertising</a>
+    </p>
   </header>
 
   <footer>
@@ -138,5 +161,3 @@
 </body>
 
 </html>
-
-

@@ -1,152 +1,172 @@
 <!DOCTYPE html>
-    <html>
-    
-    <head>
-      <title>FILMS</title>
-      <link rel="stylesheet" href="style.css" />
-      <style>
-        @font-face {
-          font-family: "Aston Script";
-          src: url("Aston Script.ttf") format("truetype");
-        }
-    
-        body {
-          font-family: "Charter", serif;
-          font-weight: bold;
-          color: #5a321a;
-          text-align: center;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background-color: white;
-          position: relative;
-        }
-    
-        h1 {
-          font-size: 2.5em;
-          margin: 0.2em 0;
-          border-bottom: 2px solid #5a321a;
-          display: inline-block;
-          line-height: 0.8;
-          padding-bottom: 0;
-        }
-    
-        h2 {
-          font-size: 1.5em;
-          margin: 0.3em 0;
-        }
+<html>
 
-        h3 {
-          font-size 1.5em;
-        }
-    
-        .tagline {
-          font-family: "Aston Script", serif;
-          font-style: italic;
-          font-size: 2em;
-          position: fixed;
-          bottom: 20px;
-          left: 20px;
-          color: #5a321a;
-          z-index: 10;
-        }
-    
-        .menu {
-          position: absolute;
-          top: 10px;
-          right: 20px;
-          font-family: "Charter", serif;
-          color: #5a321a;
-        }
-    
-        .menu-button {
-          cursor: pointer;
-          border: none;
-          background: none;
-          color: #5a321a;
-          font-size: 1.5em;
-          font-weight: bold;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-          justify-content: center;
-          padding: 5px;
-        }
-    
-        .menu-button div {
-          width: 30px;
-          height: 4px;
-          background-color: #5a321a;
-          margin: 3px 0;
-        }
-    
-        .dropdown {
-          display: none;
-          position: absolute;
-          top: 40px;
-          right: 0;
-          background-color: white;
-          z-index: 1;
-        }
-    
-        .dropdown a {
-          color: #5a321a;
-          text-decoration: none;
-          display: block;
-          padding: 10px 20px;
-          font-size: 1.2em;
-          text-align: right;
-        }
-    
-        .dropdown a:hover {
-          color: maroon;
-        }
-    
-        .menu:hover .dropdown, .menu-button:focus + .dropdown {
-          display: block;
-        }
-    
-        footer p {
-          color: #5a321a;
-          margin-top: 2em;
-        }
-      </style>
-    </head>
-    
-    <body>
-      <div class="menu">
-        <button class="menu-button" aria-expanded="false">
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
-        <div class="dropdown">
-          <a href="film.html">Films</a>
-          <a href="#">About</a>
-        </div>
-      </div>
-    
-      <header>
-        <h1>Films</h1>
-        <h2>Casting</h2>
-        <h3>
-          <img src="/Desktop/1/23/Ivy\ Pham\ Casting/IPCSite3-main/Posters/Bugonia.jpg" alt="Bugonia">
-          <img src="/Desktop/1/23/Ivy\ Pham\ Casting/IPCSite3-main/Posters/MartySupreme.jpg" alt="MartySupreme">
-          <img src="/Desktop/1/23/Ivy\ Pham\ Casting/IPCSite3-main/Posters/TheCurse.jpg" alt="TheCurse">
-          <img src="/Desktop/1/23/Ivy\ Pham\ Casting/IPCSite3-main/Posters/TheSmashingMachine.jpg" alt="TheCurse">
-          <img src="/Desktop/1/23/Ivy\ Pham\ Casting/IPCSite3-main/Posters/TheSympathizer.jpg" alt="TheSympathizer">
-        </h3>
-        <p class="tagline">Film / Fashion / Advertising</p>
-      </header>
-    
-      <footer>
-        <p>&copy; 2025 Ivy Pham Casting</p>
-      </footer>
-    </body>
-    
-    </html>
-    
+<head>
+  <title>FILMS</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @font-face {
+      font-family: "Aston Script";
+      src: url("Aston Script.ttf") format("truetype");
+    }
+
+    body {
+      font-family: "Charter", serif;
+      font-weight: bold;
+      color: #5a321a;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0.2em 0;
+      border-bottom: 2px solid #5a321a;
+      display: inline-block;
+      line-height: 0.8;
+      padding-bottom: 0;
+    }
+
+    .film-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .film-item {
+      text-align: center;
+    }
+
+    .film-item img {
+      width: 200px;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .film-item p {
+      font-family: "Aston Script", serif;
+      font-size: 0.8em;
+      margin: 0;
+      color: #5a321a;
+    }
+
+    .menu {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-family: "Charter", serif;
+      color: #5a321a;
+    }
+
+    .menu-button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: #5a321a;
+      font-size: 1.5em;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 5px;
+    }
+
+    .menu-button div {
+      width: 30px;
+      height: 4px;
+      background-color: #5a321a;
+      margin: 3px 0;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background-color: white;
+      z-index: 1;
+    }
+
+    .dropdown a {
+      color: #5a321a;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      text-align: right;
+    }
+
+    .dropdown a:hover {
+      color: maroon;
+    }
+
+    .menu:hover .dropdown, .menu-button:focus + .dropdown {
+      display: block;
+    }
+
+    footer p {
+      color: #5a321a;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <button class="menu-button" aria-expanded="false">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <div class="dropdown">
+      <a href="index.html">Home</a>
+      <a href="film.html">Films</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+  <header>
+    <h1>FILMS</h1>
+  </header>
+
+  <section class="film-gallery">
+    <div class="film-item">
+      <img src="Posters/Bugonia.jpg" alt="Bugonia">
+      <p>Bugonia</p>
+    </div>
+    <div class="film-item">
+      <img src="Posters/MartySupreme1.jpg" alt="Marty Supreme">
+      <p>Marty Supreme</p>
+    </div>
+    <div class="film-item">
+      <img src="Posters/TheCurse.jpg" alt="The Curse">
+      <p>The Curse</p>
+    </div>
+    <div class="film-item">
+      <img src="Posters/TheSmashingMachine.jpg" alt="The Smashing Machine">
+      <p>The Smashing Machine</p>
+    </div>
+    <div class="film-item">
+      <img src="Posters/TheSympathizer.jpg" alt="The Sympathizer">
+      <p>The Sympathizer</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ivy Pham Casting</p>
+  </footer>
+</body>
+
+</html>
